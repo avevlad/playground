@@ -50,6 +50,13 @@ export default function ValtioPage() {
 
   return (
     <div>
+      code:{" "}
+      <a
+        target="_blank"
+        href="https://github.com/avevlad/playground/blob/main/pages/state/valtio/index.tsx"
+      >
+        github.com/avevlad/playground/state/valtio/index.tsx
+      </a>
       <Count />
       {!isServer && (
         <Suspense fallback={<span>waiting...</span>}>
