@@ -17,6 +17,7 @@ const state = proxy<State>({
   text: "hello",
   products: fetch(`/api/products`).then((res) => res.json()),
 });
+
 const unsub = devtools(state, "state name");
 
 function Count() {
