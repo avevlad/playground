@@ -1,5 +1,6 @@
 import React, { Suspense, useState } from "react";
 // import { IMaskInput } from "react-imask";
+// https://github.com/uNmAnNeR/imaskjs/issues/383#issuecomment-667539665
 import { IMaskInput } from "@mirco312312/react-imask";
 import dynamic from "next/dynamic";
 
