@@ -24,7 +24,7 @@ export default function Home({
       <h2>State</h2>
       <ul>
         <li>
-          <a href="/state/valtio">valtio</a>
+          <a href="/state/valtio">valtio2</a>
         </li>
       </ul>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
