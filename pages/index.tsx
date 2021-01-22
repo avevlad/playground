@@ -7,6 +7,10 @@ import Date from "../components/date";
 import { GetStaticProps } from "next";
 
 export default function Home({
+  // @ts-ignore
+  xx,
+  // @ts-ignore
+  xx2,
   allPostsData,
 }: {
   allPostsData: {
@@ -27,6 +31,8 @@ export default function Home({
           <a href="/state/valtio">valtio3</a>
         </li>
       </ul>
+      <pre>{xx2}</pre>
+      <pre>{xx}</pre>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -51,6 +57,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
   return {
     props: {
+      xx: JSON.stringify(process.env, null, 2),
       allPostsData,
     },
   };
