@@ -28,7 +28,7 @@ export default function Home({
       <h2>State</h2>
       <ul>
         <li>
-          <a href="/state/valtio">valtio3</a>
+          <a href="/state/valtio">valtio4</a>
         </li>
       </ul>
       <pre>{xx2}</pre>
